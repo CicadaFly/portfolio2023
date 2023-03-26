@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./styles.css";
+import "./Test.module.css";
 
 const Hexagon = () => {
   const [finished, setFinished] = useState(false);
