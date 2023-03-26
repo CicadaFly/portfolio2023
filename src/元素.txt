@@ -1,0 +1,11 @@
+1.想要有酷酷的開場動畫，六角形旋轉
+2.可以有dark mode，這點應該能用css掛在main那層克服
+3.必須有響應式排版
+4.欄位：skill, 表明自己是PM出身的front-end enigineer，有bulma, redux, react, git的技能
+5.要有照片
+6.發佈到nestify
+7.Navbar的響應式有收疊功能
+8.react-router的應用要想想
+9.Navbar的連結是錨點
+10.不知道有沒有辦法做浮現式的css
+11.掛一個天氣的API上去吧!
