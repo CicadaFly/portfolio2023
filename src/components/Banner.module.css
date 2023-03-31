@@ -1,0 +1,9 @@
+.section {
+  height: 100vh;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .section {
+    height: auto;
+  }
+}
