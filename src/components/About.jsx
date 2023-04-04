@@ -18,9 +18,21 @@ const About = () => {
               <li><span className={classes.hl}>Focused and dedicated to completing tasks on time</span> and to the best of my abilities.</li>
               <li>With a background in client-facing roles,  <span className={classes.hl}>could understanding of customer needs and am able to translate those needs into effective solutions.</span></li>
             </ul>
-          </div>
-          <div className='column is-one-fifths'>
-            <h3 className='is-size-3 is-size-4-mobile  is-align-self-center'>Skills:</h3>
+            <h3 className='is-size-3 is-size-4-mobile'>Skills:</h3>
+              <div className='is-flex-direction-row'>
+                <div className='tags'>
+                  <span className='tag has-background-primary-dark has-text-white is-medium'>React</span>
+                  <span className='tag has-background-primary-dark has-text-white is-medium'>Ruby on Rails</span>
+                  <span className='tag has-background-primary-dark has-text-white is-medium'>Git</span>                  
+                  <span className='tag has-background-warning-dark has-text-white is-medium'>Redux</span>
+                  <span className='tag has-background-warning-dark has-text-white is-medium'>React Router</span>
+                  <span className='tag is-info is-medium'>Bootstrap</span>
+                  <span className='tag is-info is-medium'>Bulma</span>
+                  <span className='tag is-info is-medium'>Tailwind</span>
+                  <span className='tag is-info is-medium'>CSS</span>
+                  <span className='tag is-info is-medium'>Html</span>
+                </div>
+              </div>
           </div>
       </div>
       </div>

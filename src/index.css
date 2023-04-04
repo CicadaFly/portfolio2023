@@ -1,20 +1,25 @@
 html {
   height: 100%;
   background-color: #e7e5e5;
-  color: #000000
+  color: #000000;
+  
+}
+footer {
+  background-color: #e7e5e5 !important;
 }
 h2{
   color: #242423;
 }
 body{
-  color: #242423;
+  color: #242423 !important;
 }
 /* body {
   background-color: #e5d0e3;
-} */
-/* 預備色
-#aee5d8
-#e0b0d5
-#e5d0e3
-  主色
-#e7e5e5*/
+} 
+預備色*/
+.eerebody{
+color: #aee5d8;
+color: #e0b0d5;
+color: #e5d0e3;
+
+color: #e7e5e5}

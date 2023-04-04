@@ -4,7 +4,7 @@ import classes from './Banner.module.css'
 const Banner = () => {
   return (
     <div className={`${classes.section} "section is-flex-direction-row is-align-content-center"`} id="banner">
-      <div className="container mx-auto my-auto columns is-align-content-center pt-5 mt-5">
+      <div className="container mx-auto my-auto columns is-align-content-center pt-6">
         <div className="column is-two-thirds-desktop is-full-mobile is-align-self-center">
           <h2 className="has-text-weight-bold is-size-2-desktop is-size-4-mobile font">Hello, I am Harvie Liu!</h2>          
           <h2 className="subtitle is-size-3-desktop is-size-4-mobile mt-2">I was a Project Manager</h2>

@@ -22,6 +22,13 @@ function App() {
     <Project/>
     <Contact/>
     <NavBar/>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Portfolio by <strong>Harvie Liu</strong>, established in 2023
+        </p>
+      </div>
+    </footer>
     </>
   )
 }
