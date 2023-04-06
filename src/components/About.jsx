@@ -1,10 +1,18 @@
 import classes from './About.module.css'
 import personalImg2 from '../assets/person2.jpg'
+import { motion } from 'framer-motion'
 const About = () => {
+  const fadeIn = {
+    hidden: { x: 90, opacity: 0 },
+    show: { x: 0, opacity: 1, transition: { type: 'Tween',duration: 1.5 } }
+  }
   return (
     <div className={`${classes.section} "section is-flex-direction-row is-align-content-center"`} id="about">
-      <div className='container mx-auto my-auto columns my-auto is-align-content-center m-0'>
-      <div className="column is-justify-content-start is-align-self-center is-full-mobile">
+      <motion.div className='container mx-auto my-auto columns my-auto is-align-content-center m-0'
+                                variants={fadeIn}
+                                initial='hidden'
+                                whileInView={'show'}>
+        <div className="column is-justify-content-start is-align-self-center is-full-mobile">
           <figure className='is-hidden-mobile'>
             <img src={personalImg2}  style={{maxHeight:"380px"}}/> 
           </figure>
@@ -35,7 +43,7 @@ const About = () => {
               </div>
           </div>
       </div>
-      </div>
+      </motion.div>
     </div>
 
   )

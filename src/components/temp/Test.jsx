@@ -1,38 +1,29 @@
-import { useState, useEffect } from "react";
-import "./Test.module.css";
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import img1 from '../../assets/person1.jpg'
+import img2 from '../../assets/person2.jpg'
+import img3 from '../../assets/dnd.png'
 
-const Hexagon = () => {
-  const [finished, setFinished] = useState(false);
-  const [size, setSize] = useState("3rem");
-
-  useEffect(() => {
-    const hex = document.querySelector(".hexagon");
-    const finishAnimation = () => setFinished(true);
-
-    hex.addEventListener("animationend", finishAnimation);
-
-    return () => {
-      hex.removeEventListener("animationend", finishAnimation);
-      setFinished(false);
-      setSize("3rem");
-    };
-  }, []);
-
-  const startAnimation = () => {
-    setSize("7rem");
+const Test = () =>{
+  const settings = {
+    fade: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: false,
   };
-
-  const hexClass = finished ? "hexagon finished" : "hexagon";
-  const hexStyle = { "--size": size };
-
-  return (
-    <div className="container">
-      <div className={hexClass} style={hexStyle} onClick={startAnimation}>
-        <div className="hexagon__inner"></div>
+  return(
+    <div className='container'>
+      <Slider {...settings}>
+        <div><img src={img1} style={{maxHeight:'100px',margin:'auto'}}/></div>
+        <div><img src={img2} style={{maxHeight:'100px',margin:'auto'}}/></div>
+        <div><img src={img3} style={{maxHeight:'100px',margin:'auto'}}/></div>
+      </Slider>
       </div>
-      {finished && <div className="text">Hello world!</div>}
-    </div>
-  );
-};
+  )
+}
 
-export default Hexagon;
+export default Test

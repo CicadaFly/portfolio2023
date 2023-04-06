@@ -7,3 +7,14 @@
     height: auto;
   }
 }
+h1{
+  color:rgb(87, 40, 20) !important;
+  font-weight: 700 !important;
+}
+
+.Git{
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}

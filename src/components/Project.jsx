@@ -1,12 +1,12 @@
 import ProjectCard from './project/ProjectCard'
-import ProjectFile from './ProjectFile'
+import ProjectFile from './project/ProjectFile'
 
 const Project = () => {
   return (
     <div className="section h-full" id="project">
       <div className="container">
         <h2 className="subtitle is-size-2">Projects</h2>
-        <div className="is-flex-wrap-wrap columns">
+        <div className="is-flex-wrap-wrap columns is-justify-content-center">
           {ProjectFile.map((e,i)=>(
             <ProjectCard key={i}
                         header={e.cardHeader}
