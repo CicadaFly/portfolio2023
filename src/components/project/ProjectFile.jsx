@@ -8,8 +8,21 @@ import cost from '../../assets/reduxAcc.png'
 import cost2 from '../../assets/reduxAcc.gif'
 import rails from '../../assets/railstagram.png'
 import rails2 from '../../assets/railstagram.gif'
+import tarot1 from '../../assets/tarot1.png'
+import tarot2 from '../../assets/tarot2.png'
+import tarot3 from '../../assets/tarot3.png'
 const ProjectFile = [
   {
+    'cardHeader':'Online tarot(Chinese version)',
+    'cardImages':[tarot1,tarot2,tarot3],
+    'description':'An online app for Eastern-style Tarot cards, divided into three stages: "Fill in the required information"; "Select three cards, which are shuffled to random arrangement"; "Display the results"',
+    'tags':[{ name: "React", class: "has-background-primary-dark has-text-white" },
+            { name: "Tailwind", class: "is-info" },
+            { name: "Redux", class: "has-background-warning-dark has-text-white" },
+            { name: "React-router", class: "has-background-warning-dark has-text-white"}],
+    'git':'https://github.com/CicadaFly/purpleSoul',
+    'link':'https://cicadafly.github.io/purpleSoul/'
+  },{
     'cardHeader':'Drag-Drop sticky note',
     'cardImages':[dnd,dnd2],
     'description':'A SPA in the form of a sticky note, inspiring by Trello, which allows users to add new sticky notes and contents. Contents could be draged and droped between the notes.',
